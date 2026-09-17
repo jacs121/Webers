@@ -36,8 +36,7 @@ if (key === null) { // when entering the page
             hint: ""
         }
     };
-    console.log(levels[key]);
-    
+
     const redHerrings = {
         start: {
             description: "you need to do better than that to get to level 1",
@@ -78,5 +77,11 @@ if (key === null) { // when entering the page
                 localStorage.setItem("progress", progress);
             }
         }
+    } else {
+        descriptionInfo.textContent = "wrong answer.";
+        hintMessage = "go back and try again"
+
+        image.src = "./images/icon.png";
+        image.title = "webers";
     }
 }
