@@ -80,7 +80,7 @@ if (key === null) { // when entering the page
     } else {
         descriptionInfo.textContent = "wrong answer.";
         hintMessage = "go back and try again"
-
+        
         image.src = "./images/icon.png";
         image.title = "webers";
     }
