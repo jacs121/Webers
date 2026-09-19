@@ -12,7 +12,7 @@ if (key === null) { // when entering the page
     let progress = Number(localStorage.getItem("progress") ?? 0);
 
     const levels = {
-        webers: {
+        webers: { // actual start key
             index: 1,
             description: "what a musical me, though hearing it is oddly",
             image: "./images/clock.png",
@@ -20,16 +20,23 @@ if (key === null) { // when entering the page
             hint: "sorry for the shameless plug"
         },
         
-        SuddenTimes: {
+        SuddenTimes: { // a song I have in my youtube music with a clock as the image
             index: 2,
             description: "why does 7 hate 5?",
             image: "./images/light_bulb.png",
             title: "light_bulb",
-            hint: "an idea"
+            hint: "we are all sicks of these jokes I know"
         },
         
-        light6bulb: {
+        light6bulb: { // the name of the image with the underscore replaced with the number from the joke
             index: 3,
+            description: "nice try",
+            image: "",
+            title: "",
+            hint: "worded reverse"
+        },
+        nice: {
+            index: 4,
             description: "",
             image: "",
             title: "",
