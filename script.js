@@ -30,7 +30,7 @@ if (key === null) { // when entering the page
         
         light6bulb: { // the name of the image with the underscore replaced with the number from the joke
             index: 3,
-            description: "nice try",
+            description: ".nice try",
             image: "",
             title: "",
             hint: "worded reverse"
@@ -46,17 +46,23 @@ if (key === null) { // when entering the page
 
     const redHerrings = {
         start: {
-            description: "you need to do better than that to get to level 1",
+            description: "you need to do better than that to get to level 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nthe key is THE_END",
             image: "./images/icon.png",
             title: "webers",
             hint: "no really, welcome"
         },
+        THE_END: {
+            description: "the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never",
+            image: "./images/icon.png",
+            title: "the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never",
+            hint: "the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never"
+        }
     };
     
     if (redHerrings[key]) {
         const page = redHerrings[key];
     
-        descriptionInfo.textContent = page.description;
+        descriptionInfo.innerText = page.description;
         image.src = page.image;
         image.title = page.title;
         hintMessage = page.hint;
@@ -67,14 +73,14 @@ if (key === null) { // when entering the page
         const page = levels[key];
     
         if (page.index > progress + 1) {
-            descriptionInfo.textContent = "nice try :)";
+            descriptionInfo.innerText = "nice try :)";
             hintMessage = "if you didn't realize it, you cant do that"
     
             image.src = "./images/icon.png";
             image.title = "webers";
         }
         else {
-            descriptionInfo.textContent = page.description;
+            descriptionInfo.innerText = page.description;
             image.src = page.image;
             image.title = page.title;
             hintMessage = page.hint;
@@ -85,7 +91,7 @@ if (key === null) { // when entering the page
             }
         }
     } else {
-        descriptionInfo.textContent = "wrong answer.";
+        descriptionInfo.innerText = "wrong answer.";
         hintMessage = "go back and try again"
         
         image.src = "./images/icon.png";
