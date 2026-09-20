@@ -43,7 +43,7 @@ if (key === null) { // when entering the page
             hint: ""
         }
     };
-
+    
     const redHerrings = {
         start: {
             description: "you need to do better than that to get to level 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nthe key is THE_END",
